@@ -10,29 +10,29 @@ namespace CodeFirst
 {
     public partial class Form1 : Form
     {
-        // Для работы с БД MS SQL Server необходимо добавить пакет:
-        // Microsoft.EntityFrameworkCore.SqlServer(представляет функциональность Entity Framework для работы с MS SQL Server)
+        // Для роботи з БД MS SQL Server необхідно додати пакет:
+        // Microsoft.EntityFrameworkCore.SqlServer (представляє функціональність Entity Framework для роботи з MS SQL Server)
 
-        // Lazy loading или ленивая загрузка предполагает неявную автоматическую загрузку связанных данных при обращении к навигационному свойству.
+        // Lazy loading або ліниве завантаження передбачає неявне автоматичне завантаження пов'язаних даних при зверненні до навігаційної властивості.
         // Microsoft.EntityFrameworkCore.Proxies
 
         /*
-         Migrations предоставляет упорядоченный набор шагов, которые описывают процесс обновления схемы базы данных. 
-         В каждом из этих шагов (так называемая миграция) содержится определенный код, который описывает применяемые изменения.
+         Migrations надає впорядкований набір кроків, які описують процес оновлення схеми бази даних. 
+         У кожному з цих кроків (так звана міграція) міститься певний код, який описує зміни, що застосовуються.
          
-         Для использования миграций в Visual Studio необходимо добавить в проект через менеджер Nuget пакет Microsoft.EntityFrameworkCore.Tools.
-        
-        Команда Add-Migration проверяет изменения с момента последней миграции и формирует шаблон для новой миграции с любыми обнаруженными изменениями. 
-        Можно дать миграциям имя. Например, createDB. Add-Migration createDB
-        Команда Update-Database применяет все ожидающие миграции в базе данных. 
+         Для використання міграцій у Visual Studio необхідно додати в проєкт через менеджер Nuget пакет Microsoft.EntityFrameworkCore.Tools.
+         Tools -> NuGet Package Manager -> Package Manager Console
+         Команда Add-Migration перевіряє зміни з моменту останньої міграції та формує шаблон для нової міграції з будь-якими виявленими змінами. 
+         Можна дати міграціям ім'я. Наприклад, createDB. Add-Migration createDB
+         Команда Update-Database застосовує всі очікувані міграції в базі даних. 
 
-        После выполнения миграций в проект будет добавлена папка Migrations с классом миграции:
-        Папка содержит три файла:
-            XXXXXXXXXXXXXX_createDB.cs: основной файл миграции, который содержит все применяемые действия.
-            [Имя_контекста_данных]ModelSnapshot.cs: содержит текущее состояние модели, используется при создании следующей миграции.
+         Після виконання міграцій до проєкту буде додано папку Migrations із класом міграції:
+         Папка містить три файли:
+             XXXXXXXXXXXXXX_createDB.cs: основний файл міграції, який містить усі дії, що застосовуються.
+             [Ім'я_контексту_даних]ModelSnapshot.cs: містить поточний стан моделі, використовується при створенні наступної міграції.
 
-        Кроме основных таблиц база данных также будет содержать дополнительную таблицу _EFMigrationsHystory, 
-        которая будет хранить информацию о миграциях.
+         Окрім основних таблиць, база даних також міститиме додаткову таблицю _EFMigrationsHistory, 
+         яка зберігатиме інформацію про міграції.
          */
 
         public Form1()
@@ -66,7 +66,7 @@ namespace CodeFirst
                 string groupname = textBoxGroup.Text.Trim();
                 if (groupname == "")
                 {
-                    MessageBox.Show("Не задано название группы!");
+                    MessageBox.Show("Не задано назву групи!");
                     return;
                 }
                 using (var db = new AcademyGroupContext())
@@ -81,8 +81,8 @@ namespace CodeFirst
                     comboBoxGroup.DataSource = query.ToList();
                     comboBoxGroup.DisplayMember = "Name";
 
-                    MessageBox.Show("Группа добавлена!");
-                 
+                    MessageBox.Show("Групу додано!");
+
                 }
             }
             catch (Exception ex)
@@ -126,7 +126,7 @@ namespace CodeFirst
                         textBoxGr.Text = "";
                     }
 
-                    MessageBox.Show("Группа удалена!");
+                    MessageBox.Show("Групу видалено!");
                 }
             }
             catch (Exception ex)
@@ -142,7 +142,7 @@ namespace CodeFirst
                 string groupname = textBoxGroup.Text.Trim();
                 if (groupname == "")
                 {
-                    MessageBox.Show("Не задано название группы!");
+                    MessageBox.Show("Не задано назву групи!");
                     return;
                 }
                 using (var db = new AcademyGroupContext())
@@ -161,7 +161,7 @@ namespace CodeFirst
                     comboBoxGroup.DataSource = query2.ToList();
                     comboBoxGroup.DisplayMember = "Name";
 
-                    MessageBox.Show("Группа переименована!");
+                    MessageBox.Show("Групу перейменовано!");
                 }
             }
             catch (Exception ex)
@@ -178,12 +178,12 @@ namespace CodeFirst
                 string lastname = textBoxLastName.Text.Trim();
                 if (firstname == "" || lastname == "")
                 {
-                    MessageBox.Show("Не указано имя или фамилия студента!");
+                    MessageBox.Show("Не вказано ім'я або прізвище студента!");
                     return;
                 }
                 if (comboBoxGroup.Items.Count == 0)
                 {
-                    MessageBox.Show("Не создано ни одной группы!");
+                    MessageBox.Show("Не створено жодної групи!");
                     return;
                 }
                 double? average = null;
@@ -218,7 +218,7 @@ namespace CodeFirst
                     comboBoxStudent.DataSource = query2.ToList();
                     comboBoxStudent.DisplayMember = "LastName";
 
-                    MessageBox.Show("Студент добавлен!");
+                    MessageBox.Show("Студента додано!");
                 }
             }
             catch (Exception ex)
@@ -257,7 +257,7 @@ namespace CodeFirst
                         textBoxGr.Text = "";
                     }
 
-                    MessageBox.Show("Студент удалён!");
+                    MessageBox.Show("Студента видалено!");
                 }
             }
             catch (Exception ex)
@@ -274,7 +274,7 @@ namespace CodeFirst
                 string lastname = textBoxLastName.Text.Trim();
                 if (firstname == "" || lastname == "")
                 {
-                    MessageBox.Show("Не указано имя или фамилия студента!");
+                    MessageBox.Show("Не вказано ім'я або прізвище студента!");
                     return;
                 }
 
@@ -314,7 +314,7 @@ namespace CodeFirst
                     comboBoxStudent.DataSource = query3.ToList();
                     comboBoxStudent.DisplayMember = "LastName";
 
-                    MessageBox.Show("Данные о студенте изменены!");
+                    MessageBox.Show("Дані про студента змінено!");
                 }
             }
             catch (Exception ex)

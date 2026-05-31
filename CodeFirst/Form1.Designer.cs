@@ -77,7 +77,7 @@ namespace CodeFirst
             this.groupBox2.Size = new System.Drawing.Size(405, 175);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Студенты";
+            this.groupBox2.Text = "Студенти";
             // 
             // textBoxGr
             // 
@@ -96,7 +96,7 @@ namespace CodeFirst
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 15);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Группа:";
+            this.label5.Text = "Група:";
             // 
             // button6
             // 
@@ -105,7 +105,7 @@ namespace CodeFirst
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(141, 27);
             this.button6.TabIndex = 11;
-            this.button6.Text = "Изменить";
+            this.button6.Text = "Змінити";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.EditStudentClick);
             // 
@@ -116,7 +116,7 @@ namespace CodeFirst
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(141, 27);
             this.button5.TabIndex = 10;
-            this.button5.Text = "Удалить";
+            this.button5.Text = "Видалити";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.RemoveStudentClick);
             // 
@@ -127,7 +127,7 @@ namespace CodeFirst
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(141, 27);
             this.button4.TabIndex = 9;
-            this.button4.Text = "Добавить";
+            this.button4.Text = "Додати";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.AddStudentClick);
             // 
@@ -158,7 +158,7 @@ namespace CodeFirst
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 15);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Средний балл:";
+            this.label3.Text = "Середній бал:";
             // 
             // textBoxAge
             // 
@@ -176,7 +176,7 @@ namespace CodeFirst
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 15);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Возраст:";
+            this.label4.Text = "Вік:";
             // 
             // textBoxLastName
             // 
@@ -194,7 +194,7 @@ namespace CodeFirst
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 15);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Фамилия:";
+            this.label2.Text = "Прізвище:";
             // 
             // textBoxFirstName
             // 
@@ -212,7 +212,7 @@ namespace CodeFirst
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(34, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Имя:";
+            this.label1.Text = "Ім'я:";
             // 
             // groupBox1
             // 
@@ -228,7 +228,7 @@ namespace CodeFirst
             this.groupBox1.Size = new System.Drawing.Size(186, 175);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Группы";
+            this.groupBox1.Text = "Групи";
             // 
             // button3
             // 
@@ -237,7 +237,7 @@ namespace CodeFirst
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(141, 27);
             this.button3.TabIndex = 4;
-            this.button3.Text = "Изменить";
+            this.button3.Text = "Змінити";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.EditGroupClick);
             // 
@@ -248,7 +248,7 @@ namespace CodeFirst
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(141, 27);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Удалить";
+            this.button2.Text = "Видалити";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.RemoveGroupClick);
             // 
@@ -259,7 +259,7 @@ namespace CodeFirst
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 27);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Добавить";
+            this.button1.Text = "Додати";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.AddGroupClick);
             // 
@@ -293,7 +293,7 @@ namespace CodeFirst
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Академическая группа";
+            this.Text = "Академічна група";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

@@ -7,7 +7,7 @@ namespace AcademyGroupContextLib
     {
         public AcademyGroupContext()
         {
-            //Database.EnsureCreated(); //при выполнении миграции этот метод вызывает ошибку
+            //Database.EnsureCreated(); // При виконанні міграції цей метод викликає помилку.
         }
 
         public DbSet<AcademyGroup> AcademyGroups { get; set; }
@@ -15,8 +15,8 @@ namespace AcademyGroupContextLib
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // метод UseLazyLoadingProxies() делает доступной ленивую загрузку.
-            optionsBuilder.UseLazyLoadingProxies().UseSqlServer(@"Server=DESKTOP-G30VB0K\MSSQLSERVER01;Database=AcademyGroupMigrations;Integrated Security=SSPI;TrustServerCertificate=true");
+            // Метод UseLazyLoadingProxies() робить доступною ліниве завантаження.
+            optionsBuilder.UseLazyLoadingProxies().UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=AcademyGroupMigrations;Integrated Security=SSPI;TrustServerCertificate=true");
         }
     }
 }
